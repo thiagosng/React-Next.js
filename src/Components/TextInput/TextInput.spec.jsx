@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { TextInput } from '.'
+import { TextInput } from '.';
 
 describe('<TextInput />', () => {
   it('should have a value of searchValue', () => {
