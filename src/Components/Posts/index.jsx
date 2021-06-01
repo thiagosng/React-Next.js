@@ -10,6 +10,7 @@ export const Posts = ({ posts = [] }) => (
   </div>
 );
 
+//Mesma coisa que o posts = [] da linha 5
 Posts.defaultProps = {
   posts: [],
 };
