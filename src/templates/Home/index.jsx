@@ -9,8 +9,8 @@ import { TextInput } from '../../Components/TextInput';
 export const Home = () => {
   const [posts, setPosts] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
-  const [page, setPage] = useState([0]);
-  const [postsPerPage] = useState(10);
+  const [page, setPage] = useState(0);
+  const [postsPerPage] = useState(2);
   const [searchValue, setSearchValue] = useState('');
 
   const noMorePosts = page + postsPerPage >= allPosts.length;
