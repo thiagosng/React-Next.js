@@ -1,6 +1,5 @@
 export const loadPosts = async () => {
-  // eslint-disable-next-line prettier/prettier
-  const postsResponse =  fetch('https://jsonplaceholder.typicode.com/posts');
+  const postsResponse = fetch('https://jsonplaceholder.typicode.com/posts');
   const photosResponse = fetch('https://jsonplaceholder.typicode.com/photos');
 
   const [posts, photos] = await Promise.all([postsResponse, photosResponse]);

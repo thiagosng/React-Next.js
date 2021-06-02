@@ -29,7 +29,7 @@ export const Home = () => {
   }, []);
 
   useEffect(() => {
-    console.log(new Date().toLocaleString('pt-br'));
+    //console.log(new Date().toLocaleString('pt-br'));
     handleLoadPosts(0, postsPerPage);
   }, [handleLoadPosts, postsPerPage]);
 
@@ -56,7 +56,7 @@ export const Home = () => {
       </div>
       {filteredPosts.length > 0 && <Posts posts={filteredPosts} />}
 
-      {filteredPosts.length === 0 && <p>Não existem posts = </p>}
+      {filteredPosts.length === 0 && <p>Não existem posts =( </p>}
 
       <div className="button-container">
         {!searchValue && <Button text="Load More Posts" onClick={loadMorePosts} disabled={noMorePosts} />}
